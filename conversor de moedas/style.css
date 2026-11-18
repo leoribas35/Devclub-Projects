@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #8A51FC;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.logo {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+main {
+    width: 100%;
+    max-width: 375px;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: block;
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+select {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding: 0 18px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 0 18px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    border: 1px solid #772FD3;
+}
+
+button {
+    background: #772FD3;
+    border-radius: 5px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+    transform: scale(0.98);
+}
+
+section {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    margin: 15px 0;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency-box img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+.currency-value,
+.currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        padding: 30px 18px 20px;
+    }
+
+    .logo {
+        width: 240px;
+    }
+}
